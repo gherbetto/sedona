@@ -18,7 +18,8 @@ body {
     padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
-    line-height: 24px;
+    font-style: normal;
+    line-height: 26px;
     font-weight: 700;
     color: var(--basic-text-black);
     text-transform: uppercase;
@@ -96,8 +97,34 @@ img {
     color: var(--basic-big-brown);
 }
 
+/*main banner*/
+
+.main-banner {
+    height: 509px;
+    background-image: url("../img/main_background_photo.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+}
+
+.letter-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.banner-shape {
+    display: none;
+}
 .welcome-letters {
-    background: url("../img/main_background_photo.jpg") no-repeat 50% 50%;
+    padding-top: 77px;
+    padding-bottom: 11px;
+}
+
+.gorgeous-letters {
+    padding-bottom: 53px;
 }
 
 
@@ -146,19 +173,25 @@ img {
 
 }
 .fact__description__title {
-    margin-bottom: 25px;
+    font-weight: 700;
     font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 25px;
     width: 40%;
 
 }
 .fact__description__number {
     margin-bottom: 23px;
+    font-weight: 400;
     font-size: 14px;
+    line-height: 21px;
 
 }
 .fact__description__text {
     margin-bottom: 0;
+    font-weight: 400;
     font-size: 14px;
+    line-height: 21px;
     width: 80%;
 
 }
@@ -214,17 +247,20 @@ img {
 }
 
 .benefit-title {
+    font-weight: 700;
     font-size: 21px;
+    line-height: 21px;
     color: #000000;
     margin-bottom: 25px;
 ;
 }
 
 .benefit-description {
+    font-weight: 400;
     font-size: 14px;
+    line-height: 21px;
     color: #333333;
     margin-top: 0;
     margin-bottom: 0;
     max-width: 74%;
-    font-weight: 400;
 }
