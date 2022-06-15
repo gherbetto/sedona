@@ -1,0 +1,230 @@
+/* Variables */
+
+:root {
+    --letter-blue: #81B3D3;
+    --main-brown: #766458;
+    --icon-blue: #81B3D2;
+    --basic-gray-under: #EEEEEE;
+    --basic-big-brown: #766357;
+    --basic-text-black: #000000;
+
+}
+
+
+/* Global */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--basic-text-black);
+    text-transform: uppercase;
+}
+
+
+.row-reverse {
+    flex-direction: row-reverse !important;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main navigation */
+
+.site-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-text-black);
+}
+
+.navigation-menu {
+    height: 56px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 72px;
+}
+
+.nav-link {
+    align-self: center;
+}
+
+/* User navigation */
+
+
+.navigation-menu a {
+    color: var(--basic-text-black);
+}
+
+.navigation-menu a:hover,
+.navigation-menu a:focus {
+    color: var(--icon-blue);
+}
+
+.navigation-menu a:active {
+    color: rgba(0, 0, 0, 1);
+}
+
+.navigation-menu a:visited {
+    color: var(--basic-big-brown);
+}
+
+.welcome-letters {
+    background: url("../img/main_background_photo.jpg") no-repeat 50% 50%;
+}
+
+
+/* Contacts */
+
+.footer-phone {
+    color: inherit;
+}
+
+.main-footer {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+
+/*banner 1*/
+
+
+.content {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.fact {
+    display: flex;
+    flex-direction: row;
+    min-height: 256px;
+}
+
+.fact__description {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    height: 209px;
+    background-color: var(--letter-blue);
+    padding-top: 47px;
+}
+.fact__description__title,
+.fact__description__number,
+.fact__description__text {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 0;
+
+}
+.fact__description__title {
+    margin-bottom: 25px;
+    font-size: 21px;
+    width: 40%;
+
+}
+.fact__description__number {
+    margin-bottom: 23px;
+    font-size: 14px;
+
+}
+.fact__description__text {
+    margin-bottom: 0;
+    font-size: 14px;
+    width: 80%;
+
+}
+.fact__img {
+    display: flex;
+    flex: 2;
+    height: 256px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.fact__img--country {
+    background-image: url("../img/fact-country.jpg");
+}
+
+.fact__img--bridge {
+    background-image: url("../img/fact-bridge.jpg");
+}
+
+
+/* Benefits */
+
+.benefits {
+    display: flex;
+    flex-direction: row;
+}
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    align-items: center;
+    padding: 60px 0 0;
+}
+
+.benefit-house-icon {
+    width: 75px;
+    height: 72px;
+    margin-bottom: 28px;
+}
+
+.benefit-food-icon {
+    width: 75px;
+    height: 70px;
+    margin-bottom: 29px;
+}
+
+.benefit-souvenir-icon {
+    width: 64px;
+    height: 77px;
+    margin-bottom: 23px;
+}
+
+.benefit-title {
+    font-size: 21px;
+    color: #000000;
+    margin-bottom: 25px;
+;
+}
+
+.benefit-description {
+    font-size: 14px;
+    color: #333333;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 74%;
+    font-weight: 400;
+}
