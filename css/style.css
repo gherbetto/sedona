@@ -128,6 +128,29 @@ img {
 }
 
 
+/* About us */
+
+.slogan {
+
+}
+
+.slogan-title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    padding-top: 42px;
+    padding-bottom: 17px;
+}
+
+.slogan-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+    padding-bottom: 51px;
+}
+
 /* Contacts */
 
 .footer-phone {
@@ -139,7 +162,7 @@ img {
 }
 
 
-/*banner 1*/
+/*Facts*/
 
 
 .content {
@@ -263,4 +286,86 @@ img {
     margin-top: 0;
     margin-bottom: 0;
     max-width: 74%;
+}
+
+.benefits-second {
+    display: flex;
+    height: 256px;
+    background: #EEEEEE;
+}
+.benefit-second {
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    align-items: center;
+    padding: 0 0;
+}
+
+
+.benefits-second .benefit-title {
+    padding-top: 47px;
+}
+
+.benefits-second .benefit-number {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+/*Modal windows*/
+
+.modal-form {
+    display: none;
+}
+
+
+
+.interested {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interested-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 24px;
+    color: #000000;
+    padding-bottom: 4px;
+}
+
+.interested-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+    padding-bottom: 24px;
+}
+
+.btn a {
+    width: 568px;
+    height: 86px;
+    background: #766357;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.btn a:hover {
+    background: #604E43
+}
+
+.btn a:focus {
+    background: #503E33;
+}
+
+.button-text:focus {
+    mix-blend-mode: normal;
+    opacity: 0.3;
 }
