@@ -296,9 +296,7 @@ img {
 .benefit-second {
     display: flex;
     flex-direction: column;
-    flex-basis: 0;
-    min-width: 380px;
-    height: 270px;
+    min-height: 270px;
     align-items: center;
     padding: 0 10px;
 }
