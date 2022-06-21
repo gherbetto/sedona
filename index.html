@@ -17,6 +17,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
+
 <!--<header>-->
 <!--    <div class="container">-->
 <!--        <nav class="site-navigation">-->
@@ -71,10 +72,10 @@
 
     <section class="main-banner">
         <div class="letter-holder">
-            <img class="welcome-letters" src="img/welcome_letters.svg" alt=""></img>
-            <img class="gorgeous-letters" src="img/to_the_gorgeous_letters.svg" alt=""></img>
-            <img class="sedona-letters" src="img/sedona_huge_letters.svg" alt=""></img>
-            <img class="banner-shape" src="img/Shape.svg" alt=""></img>
+            <img class="welcome-letters" src="img/welcome_letters.svg" alt="">
+            <img class="gorgeous-letters" src="img/to_the_gorgeous_letters.svg" alt="">
+            <img class="sedona-letters" src="img/sedona_huge_letters.svg" alt="">
+            <img class="banner-shape" src="img/Shape.svg" alt="">
         </div>
     </section>
 
@@ -157,44 +158,41 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
                 <div class="modal-body">
-                    ...
+                    <div class="modal-header">
+                    </div>
+                    <form class="inquiry-form" action="#" method="?"><!--    не знаю что тут-->
+                        <p class="inquiry-item">
+                            <label for="day-in">дата заезда: </label>
+                            <input type="date" id="day-in">
+                        </p>
+                        <p class="inquiry-item">
+                            <label for="day-out">дата выезда: </label>
+                            <input type="date" id="day-out">
+                        </p>
+                        <div class="inquiry-item adults">
+                            <label for="adult-count">Взрослые:</label>
+                            <button type="button" class="counter-button counter-button-minus">-</button>
+                            <input type="text" value="2" id="adult-count">
+                            <button type="button" class="counter-button counter-button-plus">+</button>
+                        </div>
+                        <div class="inquiry-item children">
+                            <label for="children-count">Дети:</label>
+                            <button type="button" class="counter-button counter-button-minus">-</button>
+                            <input type="text" value="0" id="children-count">
+                            <button type="button" class="counter-button counter-button-plus">+</button>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button submit" class="btn btn-primary" data-bs-dismiss="modal">Найти</button>
+
                 </div>
             </div>
         </div>
     </div>
     <div class="modal modal-form">
-        <form class="inquiry-form" action="#" method="?"><!--    не знаю что тут-->
-            <p class="inquiry-item">
-                <label for="day-in">дата заезда: </label>
-                <input type="date" id="day-in">
-            </p>
-            <p class="inquiry-item">
-                <label for="day-out">дата выезда: </label>
-                <input type="date" id="day-out">
-            </p>
-            <div class="inquiry-item adults">
-                <label for="adult-count">Взрослые:</label>
-                <span class="minus">-</span>
-                <input type="text" value="2" id="adult-count">
-                <span class="plus">+</span>
-            </div>
-            <div class="inquiry-item children">
-                <label for="children-count">Дети:</label>
-                <button type="button" class="counter-button counter-button-minus">-</button>
-                <input type="text" value="0" id="children-count">
-                <button type="button" class="counter-button counter-button-plus">+</button>
-            </div>
-            <button class="button" type="submit">Найти</button>
-        </form>
+
     </div>
 </main>
 <footer class="page-footer">

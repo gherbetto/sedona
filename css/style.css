@@ -1,50 +1,37 @@
 /* Variables */
-:root {
-  --letter-blue: #81B3D3;
-  --main-brown: #766458;
-  --icon-blue: #81B3D2;
-  --basic-gray-under: #EEEEEE;
-  --basic-big-brown: #766357;
-  --basic-text-black: #000000;
-}
-
 /* Global */
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   font-style: normal;
   line-height: 26px;
   font-weight: 700;
-  color: var(--basic-text-black);
+  color: #000000;
   text-transform: uppercase;
 }
-
-.row-reverse {
+body img {
+  max-width: 100%;
+  height: auto;
+}
+body .row-reverse {
   flex-direction: row-reverse !important;
 }
-
-.clearfix:after {
+body .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
-
-a {
+body a {
   text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 /* Main navigation */
 .site-navigation {
   font-size: 14px;
   line-height: 26px;
-  color: var(--basic-text-black);
+  color: #000000;
 }
 
 .navigation-menu {
@@ -69,20 +56,20 @@ img {
   }
 }
 /* User navigation */
-.navigation-menu a {
-  color: var(--basic-text-black);
+.navbar a {
+  color: #000000;
 }
 
-.navigation-menu a:hover,
-.navigation-menu a:focus {
-  color: var(--icon-blue);
+.navbar a:hover,
+.navbar a:focus {
+  color: #81B3D2;
 }
 
-.navigation-menu a:active {
+.navbar a:active {
   color: rgb(0, 0, 0);
 }
 
-.navigation-menu a:visited {
+.navbar a:visited {
   color: var(--basic-big-brown);
 }
 
@@ -290,8 +277,8 @@ img {
 }
 
 /*Modal windows*/
-.modal-form {
-  display: none;
+.modal-header {
+  background-color: #766357;
 }
 
 .interested {
@@ -332,7 +319,6 @@ img {
   color: #FFFFFF;
   border: none;
 }
-
 .modal-button:hover {
   background: #604E43;
 }
@@ -353,8 +339,7 @@ img {
   flex-direction: row;
   justify-content: space-evenly;
 }
-
-.call-us {
+.footer-holder .call-us {
   display: flex;
   font-style: normal;
   font-weight: 700;
@@ -362,41 +347,34 @@ img {
   line-height: 26px;
   text-align: center;
 }
-
-.social-items {
+.footer-holder .social-items {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
-.made-by {
+.footer-holder .made-by {
   display: flex;
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
   align-items: center;
 }
-
-.social-button {
+.footer-holder .facebook {
+  padding: 13px 17px;
+}
+.footer-holder .twitter {
+  padding: 14px 16px;
+}
+.footer-holder .youtube {
+  padding: 13px 16px;
+}
+.footer-holder .social-button {
   background-color: #81B3D2;
   margin: 6px;
   width: 20px;
   height: 23px;
 }
-
-.facebook {
-  padding: 13px 17px;
-}
-
-.twitter {
-  padding: 14px 16px;
-}
-
-.youtube {
-  padding: 13px 16px;
-}
-
-.social-button a:hover {
+.footer-holder .social-button a:hover {
   background: #669EC0;
 }
 
