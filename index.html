@@ -7,135 +7,194 @@
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
-<header>
+<!--<header>-->
+<!--    <div class="container">-->
+<!--        <nav class="site-navigation">-->
+<!--            <ul class="navigation-menu">-->
+<!--                <li class="nav-link"><a href="info.html">Информация</a></li>-->
+<!--                <li class="nav-link"><a href="blank.html">Фото и видео</a></li>-->
+<!--                <li>-->
+<!--                    <a class="main-header-logo" href="index.html">-->
+<!--                        <img src="img/logo.svg" width="138" height="70" alt="Logo of a City of Sedona">-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="nav-link"><a href="blank.html">Карта штата</a></li>-->
+<!--                <li class="nav-link"><a href="catalog.html">гостиницы</a></li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+<!--    </div>-->
+<!--</header>-->
+
+<nav class="navbar navbar-expand-lg bg-light p-0">
     <div class="container">
-        <nav class="site-navigation">
-            <ul class="navigation-menu">
-                <li class="nav-link"><a href="info.html">Информация</a></li>
-                <li class="nav-link"><a href="blank.html">Фото и видео</a></li>
-                <li>
-                    <a class="main-header-logo" href="index.html">
+        <a class="navbar-brand d-block d-sm-none" href="#">
+            <img src="img/logo.svg" width="138" height="70" alt="Logo of a City of Sedona">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Photos</a>
+                </li>
+                <li class="nav-item d-none d-sm-block">
+                    <a class="nav-link p-0" href="#">
                         <img src="img/logo.svg" width="138" height="70" alt="Logo of a City of Sedona">
                     </a>
                 </li>
-                <li class="nav-link"><a href="blank.html">Карта штата</a></li>
-                <li class="nav-link"><a href="catalog.html">гостиницы</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our Map</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Catalog</a>
+                </li>
             </ul>
-
-        </nav>
+        </div>
     </div>
-</header>
-<main class="container-fluid">
+</nav>
+
+<main class="container-fluid p-0">
 
     <section class="main-banner">
         <div class="letter-holder">
             <img class="welcome-letters" src="img/welcome_letters.svg" alt=""></img>
             <img class="gorgeous-letters" src="img/to_the_gorgeous_letters.svg" alt=""></img>
             <img class="sedona-letters" src="img/sedona_huge_letters.svg" alt=""></img>
-            <img class="banner-shape" src="img/Shape" alt=""></img>
+            <img class="banner-shape" src="img/Shape.svg" alt=""></img>
         </div>
     </section>
 
     <div class="container">
-        <section class="content">
-            <div class="slogan">
-                <p class="slogan-title">Седона - небольшой городок в аризоне,<br> заслуживающий большего!</p>
-                <p class="slogan-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-            </div>
-            <div class="fact">
-                <div class="fact__description">
-                    <p class="fact__description__title">Настоящий городок</p>
-                    <p class="fact__description__number">-№1-</p>
-                    <p class="fact__description__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <div class="row">
+            <section class="col-12 content">
+                <div class="slogan">
+                    <p class="slogan-title">Седона - небольшой городок в аризоне,<br> заслуживающий большего!</p>
+                    <p class="slogan-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
                 </div>
-                <div class="fact__img fact__img--country"></div>
-            </div>
-            <div class="benefits">
-                <div class="benefit">
-                    <img class="benefit-house-icon" src="img/icon-1.svg" alt="house" width="75" height="72">
-                    <p class="benefit-title">Housing</p>
-                    <p class="benefit-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <div class="fact row">
+                        <div class="col-12 col-md-4 d-flex fact__description">
+                            <p class="fact__description__title">Настоящий городок</p>
+                            <p class="fact__description__number">-№1-</p>
+                            <p class="fact__description__text">Седона — не аттракцион для туристов, там течёт своя
+                                жизнь</p>
+                        </div>
+                        <div class="col-12 col-md-8 fact__img fact__img--country"></div>
+                    </div>
+                <div class="benefits row">
+                    <div class="benefit col-12 col-md-4">
+                        <img class="benefit-house-icon" src="img/icon-1.svg" alt="house" width="75" height="72">
+                        <p class="benefit-title">Housing</p>
+                        <p class="benefit-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                    </div>
+                    <div class="benefit col-12 col-md-4">
+                        <img class="benefit-food-icon" src="img/icon-3.svg" alt="food">
+                        <p class="benefit-title">Food</p>
+                        <p class="benefit-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    </div>
+                    <div class="benefit col-12 col-md-4">
+                        <img class="benefit-souvenir-icon" src="img/icon-2.svg" alt="souvenirs">
+                        <p class="benefit-title">Souvenirs</p>
+                        <p class="benefit-description">Не только китайского, но и местного производства!</p>
+                    </div>
                 </div>
-                <div class="benefit">
-                    <img class="benefit-food-icon" src="img/icon-3.svg" alt="food">
-                    <p class="benefit-title">Food</p>
-                    <p class="benefit-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <div class="fact row-reverse">
+                    <div class="fact__description">
+                        <p class="fact__description__title">Там есть Мост дьявола</p>
+                        <p class="fact__description__number">-№2-</p>
+                        <p class="fact__description__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                    </div>
+                    <div class="fact__img fact__img--bridge"></div>
                 </div>
-                <div class="benefit">
-                    <img class="benefit-souvenir-icon" src="img/icon-2.svg" alt="souvenirs">
-                    <p class="benefit-title">Souvenirs</p>
-                    <p class="benefit-description">Не только китайского, но и местного производства!</p>
+                <div class="benefits-second">
+                    <div class="benefit-second">
+                        <p class="benefit-second-title">небольшая площадь</p>
+                        <p class="benefit-second-number">-№3-</p>
+                        <p class="benefit-second-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                    </div>
+                    <div class="benefit-second">
+                        <p class="benefit-second-title">красивая дорога</p>
+                        <p class="benefit-second-number">-№4-</p>
+                        <p class="benefit-second-description">ехать в седону из лас-вегаса совсем не скучно!</p>
+                    </div>
+                    <div class="benefit-second">
+                        <p class="benefit-second-title">мало туристов</p>
+                        <p class="benefit-second-number">-№5-</p>
+                        <p class="benefit-second-description">большинство едет в гранд каньон и толпится там</p>
+                    </div>
                 </div>
-            </div>
-            <div class="fact row-reverse">
-                <div class="fact__description">
-                    <p class="fact__description__title">Там есть Мост дьявола</p>
-                    <p class="fact__description__number">-№2-</p>
-                    <p class="fact__description__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-                </div>
-                <div class="fact__img fact__img--bridge"></div>
-            </div>
-            <div class="benefits-second">
-                <div class="benefit-second">
-                    <p class="benefit-title">небольшая площадь</p>
-                    <p class="benefit-number">-№3-</p>
-                    <p class="benefit-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                </div>
-                <div class="benefit-second">
-                    <p class="benefit-title">красивая дорога</p>
-                    <p class="benefit-number">-№4-</p>
-                    <p class="benefit-description">ехать в седону из лас-вегаса совсем не скучно!</p>
-                </div>
-                <div class="benefit-second">
-                    <p class="benefit-title">мало туристов</p>
-                    <p class="benefit-number">-№5-</p>
-                    <p class="benefit-description">большинство едет в гранд каньон и толпится там</p>
-                </div>
-            </div>
 
-        </section>
-
-        <section class="interested">
-            <p class="interested-title">Заинтересовались?</p>
-            <p class="interested-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <div class="btn">
-                <a class="button-text" href="blank.html">поиск гостиницы в седоне</a>
+            </section>
+            <section class="interested">
+                <p class="interested-title">Заинтересовались?</p>
+                <p class="interested-description">
+                    Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
+                </p>
+                <button type="button" class="modal-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    поиск гостиницы в седоне
+                </button>
+            </section>
+            <section class="map col-12">
+                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+            </section>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
             </div>
-        </section>
-        <div class="modal modal-form">
-            <form class="inquiry-form" action="#" method="?"><!--    не знаю что тут-->
-                <p class="inquiry-item">
-                    <label for="day-in">дата заезда: </label>
-                    <input type="date" id="day-in">
-                </p>
-                <p class="inquiry-item">
-                    <label for="day-out">дата выезда: </label>
-                    <input type="date" id="day-out">
-                </p>
-                <div class="inquiry-item adults">
-                    <label for="adult-count">Взрослые:</label>
-                    <span class="minus">-</span>
-                    <input type="text" value="2" id="adult-count">
-                    <span class="plus">+</span>
-                </div>
-                <div class="inquiry-item children">
-                    <label for="children-count">Дети:</label>
-                    <button type="button" class="counter-button counter-button-minus">-</button>
-                    <input type="text" value="0" id="children-count">
-                    <button type="button" class="counter-button counter-button-plus">+</button>
-                </div>
-                <button class="button" type="submit">Найти</button>
-            </form>
         </div>
-        <div class="modal modal-map">
-            <!-- Здесь будет карта -->
-            <img src="img/map.png" width="1199" height="594" alt="image of the google map"></img>
-        </div>
+    </div>
+    <div class="modal modal-form">
+        <form class="inquiry-form" action="#" method="?"><!--    не знаю что тут-->
+            <p class="inquiry-item">
+                <label for="day-in">дата заезда: </label>
+                <input type="date" id="day-in">
+            </p>
+            <p class="inquiry-item">
+                <label for="day-out">дата выезда: </label>
+                <input type="date" id="day-out">
+            </p>
+            <div class="inquiry-item adults">
+                <label for="adult-count">Взрослые:</label>
+                <span class="minus">-</span>
+                <input type="text" value="2" id="adult-count">
+                <span class="plus">+</span>
+            </div>
+            <div class="inquiry-item children">
+                <label for="children-count">Дети:</label>
+                <button type="button" class="counter-button counter-button-minus">-</button>
+                <input type="text" value="0" id="children-count">
+                <button type="button" class="counter-button counter-button-plus">+</button>
+            </div>
+            <button class="button" type="submit">Найти</button>
+        </form>
     </div>
 </main>
 <footer class="page-footer">
