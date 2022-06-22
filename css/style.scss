@@ -74,6 +74,7 @@ body {
 .navbar {
   a {
     color: $main-text-color;
+    min-width: 100px;
 
     &:hover {
       color: $icon-blue;
@@ -107,6 +108,11 @@ body {
   }
 }
 
+@media (max-width: 575px) {
+  .navbar-brand {
+    padding: 0;
+  }
+}
 
 /*main banner*/
 
@@ -181,7 +187,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 256px;
-  background-color: var(--letter-blue);
+  background-color: $icon-blue;
   padding-top: 47px;
 
   .fact__description__title,
@@ -283,24 +289,27 @@ body {
 .benefits-second {
   display: flex;
   height: 256px;
-  background: #EEEEEE;
+
 
   .benefit-second {
     display: flex;
     flex-direction: column;
-    min-height: 270px;
+    min-height: 256px;
     align-items: center;
     padding: 0 10px;
+    background: #EEEEEE;
 
     &-title {
       @include block-title;
       padding-top: 47px;
+      max-width: 150px;
     }
 
     &-number {
       font-weight: 400;
       font-size: 14px;
       line-height: 21px;
+      margin-bottom: 23px;
     }
 
     &-description {
@@ -355,6 +364,7 @@ body {
   line-height: 26px;
   color: #FFFFFF;
   border: none;
+  text-transform: uppercase;
 
   &:hover {
     background: #604E43;
@@ -386,6 +396,9 @@ body {
     font-size: 21px;
     line-height: 26px;
     text-align: center;
+    a {
+      color: $main-text-color;
+    }
   }
 
   .made-by {
