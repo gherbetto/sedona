@@ -15,32 +15,35 @@ body img {
   max-width: 100%;
   height: auto;
 }
-body .row-reverse {
-  flex-direction: row-reverse !important;
-}
-body .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 body a {
   text-decoration: none;
 }
 
-/* Main navigation */
-.site-navigation {
-  font-size: 14px;
-  line-height: 26px;
-  color: #000000;
+.row-reverse {
+  flex-direction: row-reverse !important;
 }
 
-.navigation-menu {
-  height: 56px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0 72px;
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* User navigation */
+.navbar a {
+  color: #000000;
+}
+.navbar a:hover {
+  color: #81B3D2;
+}
+.navbar a:hover, .navbar a:focus {
+  color: #81B3D2;
+}
+.navbar a:active {
+  color: rgb(0, 0, 0);
+}
+.navbar a:visited {
+  color: #766458;
 }
 
 .nav-link {
@@ -55,24 +58,6 @@ body a {
     height: 56px;
   }
 }
-/* User navigation */
-.navbar a {
-  color: #000000;
-}
-
-.navbar a:hover,
-.navbar a:focus {
-  color: #81B3D2;
-}
-
-.navbar a:active {
-  color: rgb(0, 0, 0);
-}
-
-.navbar a:visited {
-  color: var(--basic-big-brown);
-}
-
 /*main banner*/
 .main-banner {
   height: 509px;
@@ -81,29 +66,25 @@ body a {
   background-position: top;
   background-size: cover;
 }
-
-.letter-holder {
+.main-banner .letter-holder {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.banner-shape {
+.main-banner .letter-holder .banner-shape {
   display: none;
 }
-
-.welcome-letters {
+.main-banner .letter-holder .welcome-letters {
   padding-top: 77px;
   padding-bottom: 11px;
 }
-
-.gorgeous-letters {
+.main-banner .letter-holder .gorgeous-letters {
   padding-bottom: 53px;
 }
 
-/* About us */
-.slogan-title {
+/* Slogan */
+.slogan .slogan-title {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -111,22 +92,12 @@ body a {
   padding-top: 42px;
   padding-bottom: 17px;
 }
-
-.slogan-description {
+.slogan .slogan-description {
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
   color: #333333;
   padding-bottom: 51px;
-}
-
-/* Contacts */
-.footer-phone {
-  color: inherit;
-}
-
-.main-footer {
-  background: rgba(255, 255, 255, 0.9);
 }
 
 /*Facts*/
@@ -136,8 +107,7 @@ body a {
   text-align: center;
   margin-bottom: 50px;
 }
-
-.fact {
+.content .fact {
   min-height: 256px;
 }
 
@@ -148,16 +118,14 @@ body a {
   background-color: var(--letter-blue);
   padding-top: 47px;
 }
-
-.fact__description__title,
-.fact__description__number,
-.fact__description__text {
+.fact__description .fact__description__title,
+.fact__description .fact__description__number,
+.fact__description .fact__description__text {
   color: #FFFFFF;
   text-align: center;
   margin-top: 0;
 }
-
-.fact__description__title {
+.fact__description .fact__description__title {
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
@@ -322,7 +290,6 @@ body a {
 .modal-button:hover {
   background: #604E43;
 }
-
 .modal-button:focus {
   mix-blend-mode: normal;
   background: #503E33;
@@ -347,11 +314,6 @@ body a {
   line-height: 26px;
   text-align: center;
 }
-.footer-holder .social-items {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 .footer-holder .made-by {
   display: flex;
   font-weight: 400;
@@ -359,23 +321,28 @@ body a {
   line-height: 26px;
   align-items: center;
 }
-.footer-holder .facebook {
-  padding: 13px 17px;
+.footer-holder .social-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.footer-holder .twitter {
-  padding: 14px 16px;
-}
-.footer-holder .youtube {
-  padding: 13px 16px;
-}
-.footer-holder .social-button {
+.footer-holder .social-items .social-item .social-button {
   background-color: #81B3D2;
   margin: 6px;
   width: 20px;
   height: 23px;
 }
-.footer-holder .social-button a:hover {
+.footer-holder .social-items .social-item .social-button a:hover {
   background: #669EC0;
+}
+.footer-holder .social-items .social-item .social-button .facebook {
+  padding: 13px 17px;
+}
+.footer-holder .social-items .social-item .social-button .twitter {
+  padding: 14px 16px;
+}
+.footer-holder .social-items .social-item .social-button .youtube {
+  padding: 13px 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
