@@ -1,3 +1,5 @@
+@import "rfs.scss";
+
 /* Variables */
 
 $main-font: "PT Sans", Arial, sans-serif;
@@ -18,20 +20,20 @@ $form-field-calm: #F2F2F2;
 
 @mixin block-title {
   font-weight: 700;
-  font-size: 21px;
   line-height: 21px;
   color: $main-text-color;
-  margin-bottom: 25px;
+  @include font-size(1.3rem);
+  @include margin-bottom(1.55rem);
 }
 
 @mixin block-description {
   font-weight: 400;
-  font-size: 14px;
   line-height: 21px;
   color: $second-text-color;
   margin-top: 0;
   margin-bottom: 0;
   max-width: 74%;
+  @include font-size(0.85rem);
 }
 
 /* Global */
@@ -303,6 +305,7 @@ body {
       @include block-title;
       padding-top: 47px;
       max-width: 150px;
+
     }
 
     &-number {
@@ -382,6 +385,10 @@ body {
 
 .page-footer {
   background: rgba(255, 255, 255, 0.9);
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer-holder {
@@ -391,13 +398,21 @@ body {
 
   .call-us {
     display: flex;
+    flex-direction: column;
     font-style: normal;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
+    align-items: center;
+
+
     a {
       color: $main-text-color;
+    }
+
+    p{
+margin-bottom: 10px;
     }
   }
 
@@ -408,19 +423,30 @@ body {
     line-height: 26px;
     align-items: center;
 
+    p {
+    }
+
+    a {
+      margin-left: 15px;
+    }
   }
 
   .social-items {
     display: flex;
     flex-direction: row;
-    align-items: center;
 
     .social-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 18px 3px;
+      background-color: #81B3D2;
+      width: 46px;
+      height: 48px;
+
       .social-button {
-        background-color: #81B3D2;
-        margin: 6px;
-        width: 20px;
-        height: 23px;
+        display: flex;
+        justify-content: center;
 
         a:hover {
           background: #669EC0;
@@ -430,7 +456,8 @@ body {
         }
 
         .facebook {
-          padding: 13px 17px;
+          height: 0.5em;
+          padding: auto;
         }
 
         .twitter {

@@ -200,19 +200,29 @@ body a {
 }
 .benefits .benefit-title {
   font-weight: 700;
-  font-size: 21px;
   line-height: 21px;
   color: #000000;
-  margin-bottom: 25px;
+  font-size: calc(1.255rem + 0.06vw);
+  margin-bottom: calc(1.28rem + 0.36vw);
+}
+@media (min-width: 1200px) {
+  .benefits .benefit-title {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .benefits .benefit-title {
+    margin-bottom: 1.55rem;
+  }
 }
 .benefits .benefit-description {
   font-weight: 400;
-  font-size: 14px;
   line-height: 21px;
   color: #333333;
   margin-top: 0;
   margin-bottom: 0;
   max-width: 74%;
+  font-size: 0.85rem;
 }
 
 .benefits-second {
@@ -229,12 +239,22 @@ body a {
 }
 .benefits-second .benefit-second-title {
   font-weight: 700;
-  font-size: 21px;
   line-height: 21px;
   color: #000000;
-  margin-bottom: 25px;
+  font-size: calc(1.255rem + 0.06vw);
+  margin-bottom: calc(1.28rem + 0.36vw);
   padding-top: 47px;
   max-width: 150px;
+}
+@media (min-width: 1200px) {
+  .benefits-second .benefit-second-title {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .benefits-second .benefit-second-title {
+    margin-bottom: 1.55rem;
+  }
 }
 .benefits-second .benefit-second-number {
   font-weight: 400;
@@ -244,12 +264,12 @@ body a {
 }
 .benefits-second .benefit-second-description {
   font-weight: 400;
-  font-size: 14px;
   line-height: 21px;
   color: #333333;
   margin-top: 0;
   margin-bottom: 0;
   max-width: 74%;
+  font-size: 0.85rem;
 }
 
 /*Modal windows*/
@@ -308,6 +328,10 @@ body a {
 /* Footer */
 .page-footer {
   background: rgba(255, 255, 255, 0.9);
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer-holder {
@@ -317,14 +341,19 @@ body a {
 }
 .footer-holder .call-us {
   display: flex;
+  flex-direction: column;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+  align-items: center;
 }
 .footer-holder .call-us a {
   color: #000000;
+}
+.footer-holder .call-us p {
+  margin-bottom: 10px;
 }
 .footer-holder .made-by {
   display: flex;
@@ -333,22 +362,32 @@ body a {
   line-height: 26px;
   align-items: center;
 }
+.footer-holder .made-by a {
+  margin-left: 15px;
+}
 .footer-holder .social-items {
   display: flex;
   flex-direction: row;
+}
+.footer-holder .social-items .social-item {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  margin: 18px 3px;
+  background-color: #81B3D2;
+  width: 46px;
+  height: 48px;
 }
 .footer-holder .social-items .social-item .social-button {
-  background-color: #81B3D2;
-  margin: 6px;
-  width: 20px;
-  height: 23px;
+  display: flex;
+  justify-content: center;
 }
 .footer-holder .social-items .social-item .social-button a:hover {
   background: #669EC0;
 }
 .footer-holder .social-items .social-item .social-button .facebook {
-  padding: 13px 17px;
+  height: 0.5em;
+  padding: auto;
 }
 .footer-holder .social-items .social-item .social-button .twitter {
   padding: 14px 16px;
