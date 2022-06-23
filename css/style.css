@@ -227,7 +227,6 @@ body a {
 
 .benefits-second {
   display: flex;
-  height: 256px;
 }
 .benefits-second .benefit-second {
   display: flex;
@@ -387,7 +386,6 @@ body a {
 }
 .footer-holder .social-items .social-item .social-button .facebook {
   height: 0.5em;
-  padding: auto;
 }
 .footer-holder .social-items .social-item .social-button .twitter {
   padding: 14px 16px;
